@@ -1,0 +1,17 @@
+D:\Users\SCALA\source\repos\ASC_Upgrade\ASC_Upgrade\bin\Debug\ASC_Upgrade.exe.config
+D:\Users\SCALA\source\repos\ASC_Upgrade\ASC_Upgrade\bin\Debug\ASC_Upgrade.exe
+D:\Users\SCALA\source\repos\ASC_Upgrade\ASC_Upgrade\bin\Debug\ASC_Upgrade.pdb
+D:\Users\SCALA\source\repos\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.csprojAssemblyReference.cache
+D:\Users\SCALA\source\repos\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.csproj.CoreCompileInputs.cache
+D:\Users\SCALA\source\repos\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.exe
+D:\Users\SCALA\source\repos\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.pdb
+D:\Users\SCALA\source\repos\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.Properties.Resources.resources
+D:\Users\SCALA\source\repos\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.csproj.GenerateResource.cache
+C:\Users\jkinnaird\Documents\Visual Studio 2015\Projects\ASC_Upgrade\ASC_Upgrade\bin\Debug\ASC_Upgrade.exe.config
+C:\Users\jkinnaird\Documents\Visual Studio 2015\Projects\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.exe
+C:\Users\jkinnaird\Documents\Visual Studio 2015\Projects\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.pdb
+C:\Users\jkinnaird\Documents\Visual Studio 2015\Projects\ASC_Upgrade\ASC_Upgrade\bin\Debug\ASC_Upgrade.exe
+C:\Users\jkinnaird\Documents\Visual Studio 2015\Projects\ASC_Upgrade\ASC_Upgrade\bin\Debug\ASC_Upgrade.pdb
+C:\Users\jkinnaird\Documents\Visual Studio 2015\Projects\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.csprojResolveAssemblyReference.cache
+C:\Users\jkinnaird\Documents\Visual Studio 2015\Projects\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.Properties.Resources.resources
+C:\Users\jkinnaird\Documents\Visual Studio 2015\Projects\ASC_Upgrade\ASC_Upgrade\obj\Debug\ASC_Upgrade.csproj.GenerateResource.Cache
