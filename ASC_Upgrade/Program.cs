@@ -1,10 +1,8 @@
 ﻿using System;
 using System.IO;
-using System.IO.Compression;
 using System.Net;
 using System.ServiceProcess;
 using System.Text;
-using System.Threading;
 using System.Collections.Generic;
 using System.Diagnostics;
 
@@ -60,6 +58,7 @@ namespace ASC_Upgrade
             //write the json to a file first so no matter what we have a log of what happened
             using (StreamWriter writer = new StreamWriter(json_file_name))
             {
+                if (!Directory.Exists("D:\\Temp")) { Directory.CreateDirectory("D:\\Temp"); }
                 writer.Write(json);
             }
 
