@@ -18,7 +18,7 @@ namespace ASC_Upgrade
             if (File.Exists(dest_file) && Directory.Exists(source_dir))
             {
                 int entries = 0;   //number of entries in the zip
-                int files = 0;      //number of files in the directory
+                int files = 0;     //number of files in the directory
 
                 using (ZipArchive archive = ZipFile.OpenRead(dest_file))   //open the backup file
                 {
@@ -28,8 +28,8 @@ namespace ASC_Upgrade
 
                 foreach (string entry in Directory.GetFileSystemEntries(source_dir, "*", SearchOption.AllDirectories)) //search the directory for all filesystem objects
                 {
-                    //zip archives count empty directories as entries, so therefroe I need to count all empty directories to match
-                    if (Directory.Exists(entry))                            //check ifentry is a directory
+                    //zip archives count empty directories as entries, so therefore I need to count all empty directories to match
+                    if (Directory.Exists(entry))                            //check if entry is a directory
                     {
                         DirectoryInfo temp_dir = new DirectoryInfo(entry);
                         if (temp_dir.GetFileSystemInfos().Length == 0)       //if there are no files in this directory

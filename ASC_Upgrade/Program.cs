@@ -22,7 +22,7 @@ namespace ASC_Upgrade
         static bool verbose = false;
 
         /// <summary>
-        /// Converts Dictionary to Json and Saved to D:\Temp and uploads tothe feeds server
+        /// Converts Dictionary to Json and Saved to D:\Temp and uploads to the feeds server
         /// </summary>
         /// <param name="report"></param>
         /// <returns>bool success</returns>
@@ -56,9 +56,9 @@ namespace ASC_Upgrade
             string uri = "http://scalafeeds.abnetwork.com/aggregator/api/mi/";  //endpoint to send json to
 
             //write the json to a file first so no matter what we have a log of what happened
+            if (!Directory.Exists("D:\\Temp")) { Directory.CreateDirectory("D:\\Temp"); }
             using (StreamWriter writer = new StreamWriter(json_file_name))
             {
-                if (!Directory.Exists("D:\\Temp")) { Directory.CreateDirectory("D:\\Temp"); }
                 writer.Write(json);
             }
 
@@ -233,6 +233,12 @@ namespace ASC_Upgrade
             string service_name = "ASC";                //name of the service to stop and start
             string backup_path = "D:\\ASC_AUTO_BAK.zip";//location to store the backup zip
 
+            //If ASC is not installed, exit without doing anything
+            if(!Directory.Exists(dest_dir))
+            {
+                Exit(report);
+            }
+
             try
             {
                 //stop service and start the upgrade process
@@ -288,6 +294,9 @@ namespace ASC_Upgrade
                 }
                 //exit if the service did not stop
                 else { log("Not Stopped"); report["reversion"] = false; report["attention"] = true; Exit(report); }                                                     //service never stopped, no actions performed
+
+                //exit with return code and output json if not done so already
+                Exit(report);
             }
             catch(Exception e) { log(e.ToString(), true); Exit(report); }
         }
@@ -356,6 +365,8 @@ namespace ASC_Upgrade
                     else { log("ASC reverion general failure, immediate attention required"); report["reversion"] = false; report["attention"] = true; }          //unknown failure, immediate attention required
                 }
                 else { Exit(report); }
+
+                Exit(report);
             }
             catch(Exception e) { log(e.ToString(), true); Exit(report); }
         }
